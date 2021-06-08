@@ -1,3 +1,5 @@
+
+import ArticleList from '../Articles/ArticleList.js'
 function AppCapital(){
     const articles=[
         {
@@ -17,7 +19,7 @@ function AppCapital(){
         },
         {
             id: 'a4',
-            title: 'Dirios del capital Hipolito Parrilla ',
+            title: 'Diarios del capital Hipolito Parrilla ',
             amount: 840,
         },
         
@@ -31,7 +33,9 @@ function AppCapital(){
     return (
         <div>
             <h1>Mercado libre</h1>
-            
+            <ArticleList  
+                articles={articles}
+            />
         </div>
     );
 }
