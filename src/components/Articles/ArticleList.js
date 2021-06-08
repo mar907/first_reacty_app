@@ -1,8 +1,12 @@
+import React from 'react'
 import ArticleItem from './ArticleItem/ArticleItem'
 
 function ArticleList({ articles, title }) {
     return (
-        <div>
+        /*    React.createElement('div', null, [
+               React.createElement('h3', null, [title])
+           ]) */
+        < div >
             <h3>{title}</h3>
             <ArticleItem
                 title={articles[0].title}
@@ -20,7 +24,7 @@ function ArticleList({ articles, title }) {
                 title={articles[3].title}
                 amount={articles[3].amount}
             />
-        </div>
+        </div >
     );
 }
 
