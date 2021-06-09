@@ -1,6 +1,7 @@
 import './ArticleItem.css';
 
 function ArticleItem(props) {
+    const ExpenseTitle
     return (
         <div className='article-item'>
             <div className='article-item__description'>
