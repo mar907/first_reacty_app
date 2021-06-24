@@ -22,7 +22,7 @@ const ArticleForm = (props) => {
 
     const submitHandler = (event) =>{
         event.preventDefault();
-    };
+    
     
     const articleData ={
         title: enteredTitle,
@@ -30,10 +30,11 @@ const ArticleForm = (props) => {
         date: new Date (enteredDate)
     };
 
-    props.onSaveArticleData(articleData)
+    props.onSaveArticleData(articleData);
     setEnteredTitle ('');
     setEnteredAmount ('');
     setEnteredDate ('');
+};
 
     return (
     <form onSubmit={submitHandler}>

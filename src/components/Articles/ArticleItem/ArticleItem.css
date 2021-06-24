@@ -6,8 +6,8 @@
     padding: 0.5rem;
     margin: 1rem 0;
     border-radius: 12px;
-    background-color: #33FF77;
-  }
+    background-color: #BB8FCE;
+    }
   
   .article-item__description {
     display: flex;
@@ -20,7 +20,7 @@
   }
   
   .article-item h1 {
-    color: #33FF77;
+    color: #C0392B;
     font-size: 1rem;
     flex: 1;
     margin: 0 1rem;
