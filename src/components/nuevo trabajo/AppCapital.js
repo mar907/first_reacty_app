@@ -1,9 +1,11 @@
+import React, { useState } from 'react';
+
 import NewArticle from '../NewArticle/NewArticle.js';
 import ArticleList from '../Articles/ArticleList.js';
 
 const AppCapital = (props) => {
 
-    const articles = [
+    const DUMMY_ARTICLE = [
         {
             id: 'a1',
             title: 'Diario de mascaras',
@@ -37,9 +39,11 @@ const AppCapital = (props) => {
 
     ];
     const addArticleHandler = article => {
-        console.log('In AppCapital.js');
-        console.log(article);
-    }
+        setArticles ((prevArticles) =>{
+            return [article,... prevArticles];
+        });
+    
+    };
 
 
     return (
