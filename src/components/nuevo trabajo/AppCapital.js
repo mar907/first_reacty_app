@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import NewArticle from '../NewArticle/NewArticle.js';
 import ArticleList from '../Articles/ArticleList.js';
 
-const AppCapital = (props) => {
+
 
     const DUMMY_ARTICLE = [
         {
@@ -38,14 +38,17 @@ const AppCapital = (props) => {
         },
 
     ];
-    const addArticleHandler = article => {
+
+    const AppCapital = () =>{
+        const [articles, setArticles] = useState (DUMMY_ARTICLE);
+    
+    const addArticleHandler = (article) => {
         setArticles ((prevArticles) =>{
             return [article,... prevArticles];
         });
-    
+
     };
-
-
+    
     return (
         <div>
             <NewArticle onAddArticle={addArticleHandler} />

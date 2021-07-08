@@ -1,5 +1,5 @@
-import ArticleItem from './ArticleItem/ArticleItem';
 import ArticleFilter from './NewArticleFilter/ArticleFilter';
+import ArticleList2 from './ArticleList2';
 import { useState } from 'react';
 
 const ArticleList = (props) =>{
@@ -8,7 +8,7 @@ const ArticleList = (props) =>{
 const filterChangeHandler = (selectedYear) => {
     setFilteredYear (selectedYear);
 };
-const filteredArticles= props.items.filter (article=> {
+const filteredArticles= props.items.filter ((article)=> {
     return article.date.getFullYear().toString()=== filteredYear;
 } );
 
@@ -20,11 +20,11 @@ const filteredArticles= props.items.filter (article=> {
         <div style={{width: '50rem', margin: '0 auto' }}>
             <div>
                 <ArticleFilter
-                    selected= {FilteredYear}
+                    selected= {filteredYear}
                     onChangeFilter={filterChangeHandler}
                 />
             
-            {articlesContent}
+            <ArticleList2 items ={filteredArticles}/>
             </div>
          </div>   
     );

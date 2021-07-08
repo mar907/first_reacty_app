@@ -1,0 +1,9 @@
+.articles-list2{
+    list-style:none;
+    padding: 0;
+}
+
+.articles-list2__fallback{
+    color: white;
+    text-align: center;
+}

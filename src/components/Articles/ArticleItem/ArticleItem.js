@@ -11,7 +11,6 @@ const ArticleItem = (props)=> {
                 <h1>{props.title}</h1>
                 <div className='article-item__price'>${props.amount}</div>
             </div>
-            <button onClick={clickHandler}>Change Title</button>
         </div>
         </li>
     );
