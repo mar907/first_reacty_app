@@ -1,5 +1,6 @@
 import ArticleFilter from './NewArticleFilter/ArticleFilter';
 import ArticleList2 from './ArticleList2';
+import ArtclesChart from './ArticlesChart';
 import { useState } from 'react';
 
 const ArticleList = (props) =>{
@@ -23,7 +24,7 @@ const filteredArticles= props.items.filter ((article)=> {
                     selected= {filteredYear}
                     onChangeFilter={filterChangeHandler}
                 />
-            
+            <ArtclesChart articles ={ filteredArticles}/>
             <ArticleList2 items ={filteredArticles}/>
             </div>
          </div>   
