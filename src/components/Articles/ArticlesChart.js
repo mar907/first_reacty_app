@@ -19,7 +19,7 @@ const ArtclesChart = (props) => {
     ];
     for (const article of props.articles){
         const articleMonth = article.date.getMonth();
-        chartDataPoints(articleMonth).value += article.amount;
+        chartDataPoints[articleMonth].value += article.amount;
     }
     return <Chart DataPoints ={chartDataPoints}/>;
 };

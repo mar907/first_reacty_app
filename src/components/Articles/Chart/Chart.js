@@ -11,7 +11,7 @@ const Chart = (props) => {
         {props.dataPoints.map((dataPoint)=> (
             <ChartBar
             key= {dataPoint.label}
-            value= { dataPoint.value}
+            value= {dataPoint.value}
             maxValue = {totalMaximun}
             label= {dataPoint.label}
             />

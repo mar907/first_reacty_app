@@ -26,7 +26,7 @@ const ArticleForm = (props) => {
     
     const articleData ={
         title: enteredTitle,
-        amount: enteredAmount,
+        amount: +enteredAmount,
         date: new Date (enteredDate)
     };
 
